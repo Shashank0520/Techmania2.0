@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FAQ Section</title>
+    <link rel="stylesheet" href="More.css">
+</head>
+
+<body>
+    <header>
+        <h1>More</h1>
+        <nav class="navigation">
+            <a href="file:///E:/Web%20Development/TechmaniaWebsite/indexMain.html#">Home</a>
+            <a href="file:///E:/Web%20Development/TechmaniaWebsite/AboutUs.html">About us</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">Events<span class="arrow">▼</span></a>
+                <div class="dropdown-menu">
+                    <a href="file:///E:/Web%20Development/TechmaniaWebsite/Technical.html">Technical</a>
+                    <a href="file:///E:/Web%20Development/TechmaniaWebsite/NonTech.html">Non-Technical</a>
+                </div>
+            </div>
+            <a href="file:///E:/Web%20Development/TechmaniaWebsite/More.html">More</a>
+            <button class="btnLogin-popup">Login</button>
+            <div class="theme-toggle">
+                <input type="checkbox" id="theme-switch" class="theme-switch" />
+                <label for="theme-switch" class="toggle-label">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <br><br><br><br><br><br>
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+        <input type="text" id="search" placeholder="What's your dought...">
+
+        <div class="faq-category">
+            <h2>General Questions</h2>
+            <div class="faq-item">
+                <button class="faq-question">When and where is the event taking place?</button>
+                <div class="faq-answer">
+                    <p>The event will be held on 28<sup>th</sup> and 29<sup>th</sup> August at Bhavans collage Andheri (West). The event will starts from 8 am in the morning.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How can I register for the event?</button>
+                <div class="faq-answer">
+                    <p>You can register for the event by visiting our event section of these website and filling out the registration form. Early registration is encouraged as space is limited.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contact-form-container">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-message" id="nameError">Please enter your name.</span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="emailError">Please enter a valid email address.</span>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+            </div>
+            <div class="form-group">
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <span class="error-message" id="messageError">Please enter your message.</span>
+            </div>
+            <button type="submit" id="submitButton">Send Message</button>
+        </form>
+        <div id="formSuccess" class="success-message">Your message has been sent successfully!</div>
+    </div>
+
+
+    <div class="chatbot-container">
+        <div id="chatbot">
+            <div class="chat-header">
+                <h2>Chatbot</h2>
+                <button id="closeChat">×</button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div id="messages"></div>
+                <input type="text" id="userInput" placeholder="Type a message..." autofocus>
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+        <button id="openChat">Chat with us</button>
+    </div>
+
+
+    <div class="social-media-container">
+        <h2>Follow Us</h2>
+        <div class="social-media-icons">
+            <a href="https://facebook.com/yourprofile" target="_blank" class="social-icon facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://instagram.com/yourprofile" target="_blank" class="social-icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <div class="social-share">
+            <h3>Share This Page</h3>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank" class="share-button facebook" aria-label="Share on Facebook">
+                Share on Facebook
+            </a>
+            <a href="https://twitter.com/intent/tweet?url=YOUR_URL" target="_blank" class="share-button twitter" aria-label="Share on Twitter">
+                Share on Twitter
+            </a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_URL" target="_blank" class="share-button linkedin" aria-label="Share on LinkedIn">
+                Share on LinkedIn
+            </a>
+        </div>
+    </div>
+    <a href="#" class="scroll-to-top" id="scroll-to-top">^</a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="More.js"></script>
+    <footer>
+        <div class="bottom-strip">
+            <p>&copy; 2024 Technical Events. All rights reserved By TECHMANIA 2.0.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
